@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/player_frame_layout">
+
+        <SurfaceView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/sv_player" />
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/player_media_layout"
+            android:layout_gravity="center_horizontal|bottom" />
+
+    </FrameLayout>-->
+
+    <!--Widget for exoplayer view-->
+    <ImageView
+        android:id="@+id/image_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:elevation="5dp"
+        android:padding="10dp"
+        android:src="@drawable/v2_right_arror_icon"
+        app:tint="@color/white"></ImageView>
+    <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+        android:id="@+id/idExoPlayerVIew"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/progress_bar"
+        android:elevation="@dimen/margin_15dp"
+        android:indeterminateTint="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+</RelativeLayout>

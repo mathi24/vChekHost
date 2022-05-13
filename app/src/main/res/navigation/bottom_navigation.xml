@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/v3DashBoardFragment">
+
+    <fragment
+        android:id="@+id/v3DashBoardFragment"
+        android:name="com.v_chek_host.vcheckhost.V3.fragments.V3DashBoardFragment"
+        android:label="fragment_v3_dash_board"
+        tools:layout="@layout/fragment_v3_dash_board" />
+    <fragment
+        android:id="@+id/v3TestFragment"
+        android:name="com.v_chek_host.vcheckhost.V3.fragments.V3TestFragment"
+        android:label="fragment_v3_test"
+        tools:layout="@layout/fragment_v3_test" />
+    <fragment
+        android:id="@+id/v3TrainFragment"
+        android:name="com.v_chek_host.vcheckhost.V3.fragments.V3TrainFragment"
+        android:label="fragment_v3_train"
+        tools:layout="@layout/fragment_v3_train" />
+</navigation>

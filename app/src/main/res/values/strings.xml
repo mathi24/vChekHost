@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">vChek Host</string>
+    <string name="parent_app_id">Parent App ID</string>
+    <string name="model_id">Model ID</string>
+    <string name="constring">ConnString</string>
+    <string name="submit">Submit</string>
+    <string name="logout">Logout</string>
+    <string name="data_collection">Data Collection</string>
+    <string name="openNavDrawer">Navigation Drawer Open</string>
+    <string name="cloaseNavDrawer">Navigation Drawer Close</string>
+    <string name="txt_need_permissions">Need Permissions</string>
+    <string name="txt_app_settings_permissions">This app needs permission to use this feature. You can grant them in app settings.</string>
+    <string name="txt_goto_settings">GOTO SETTINGS</string>
+    <string name="txt_cancel">Cancel</string>
+    <string name="key_vin">VIN</string>
+    <string name="key_acc_code">Accessory Code</string>
+    <string name="key_acc_desc">Accessory Description</string>
+    <string name="error_enter_vin">Please Enter VIN Number</string>
+    <string name="error_acc_code">Please Enter Accessory Code</string>
+    <string name="error_acc_desc">Please Enter Accessory Description</string>
+    <string name="txt_something_went_wrong_please_try_again_later">Something went wrong, Please try again later</string>
+    <string name="txt_poor_internet_connection_please_check_your_internet_and_try_again">Poor internet connection. Please check your internet and try again.</string>
+    <string name="error_msg_crash">An unexpected error occured.Sorry for the inconvenience.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

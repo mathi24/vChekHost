@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_videoView_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_material_dark">
+
+
+    <com.v_chek_host.vcheckhost.V2.utils.MyVideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center">
+
+    </com.v_chek_host.vcheckhost.V2.utils.MyVideoView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/image_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:elevation="5dp"
+            android:padding="10dp"
+            android:src="@drawable/v2_right_arror_icon"
+            app:tint="@color/white"></ImageView>
+        <!--  <Button
+              android:id="@+id/btnAdd"
+              style="@style/Widget.MaterialComponents.Button"
+              android:layout_width="155dp"
+              android:layout_height="65dp"
+              android:layout_alignParentRight="true"
+              android:layout_alignParentBottom="true"
+              android:layout_marginBottom="75dp"
+              android:orientation="vertical"
+              android:textColor="@color/white"
+              android:drawableRight="@drawable/test_chevronright_icon"
+              android:drawableTint="@color/white"
+              android:text="Submit"
+              android:textAllCaps="false"
+              app:cornerRadius="25dp" />-->
+        <ImageView
+            android:id="@+id/ivSubmit"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="75dp"
+            android:padding="@dimen/margin_15dp"
+            android:background="@drawable/bg_circle_shape"
+            android:elevation="@dimen/margin_15dp"
+            android:src="@drawable/test_chevronright_icon" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_5dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/btn_save"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="@dimen/margin_5dp"
+                android:padding="@dimen/margin_5dp"
+                android:src="@drawable/ic_pass_white_24dp" />
+
+            <ImageView
+                android:id="@+id/btn_cancel"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:padding="@dimen/margin_5dp"
+                android:src="@drawable/ic_cancel_black_24dp" />
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:elevation="5dp"
+            android:visibility="gone"></ProgressBar>
+    </RelativeLayout>
+
+</FrameLayout>

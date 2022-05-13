@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">vCheckHostSdk</string>
+    <string name="txt_need_permissions">Need Permissions</string>
+    <string name="txt_app_settings_permissions">This app needs permission to use this feature. You can grant them in app settings.</string>
+    <string name="txt_goto_settings">GOTO SETTINGS</string>
+    <string name="txt_cancel">Cancel</string>
+
+    <string name="openFolder">Open Downloaded Folder</string>
+    <string name="downloadStarted">Download Started…</string>
+    <string name="downloadCompleted">Download Completed…</string>
+    <string name="downloadFailed">Download Failed…</string>
+    <string name="downloadAgain">Download Again</string>
+
+    <string name="tfe_ic_model" translatable="false">Model:</string>
+    <string-array name="tfe_ic_models" translatable="false">
+        <item>Quantized_EfficientNet</item>
+        <item>Float_EfficientNet</item>
+        <item>Quantized_MobileNet</item>
+        <item>Float_MobileNet</item>
+    </string-array>
+
+    <string name="tfe_ic_device" translatable="false">Device:</string>
+    <string-array name="tfe_ic_devices" translatable="false">
+        <item>CPU</item>
+        <item>GPU</item>
+        <item>NNAPI</item>
+    </string-array>
+
+    <string name="tfe_ic_camera_error" translation_description="Error regarding camera support[CHAR_LIMIT=40]">This device doesn\'t support Camera2 API.</string>
+    <string name="tfe_ic_gpu_quant_error" translation_description="Error regarding GPU support for Quant models[CHAR_LIMIT=60]">GPU does not yet supported quantized models.</string>
+
+</resources>

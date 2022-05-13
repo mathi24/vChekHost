@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <SurfaceView
+        android:id="@+id/record_surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="#CC000000">
+
+        <ImageView
+            android:id="@+id/img_flash_light"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:padding="@dimen/margin_5dp"
+            android:src="@drawable/ic_baseline_flash_off_24"
+            android:visibility="gone"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/image_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:elevation="5dp"
+            android:padding="10dp"
+            android:src="@drawable/v2_right_arror_icon"
+            app:tint="@color/white"></ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="#CC000000">
+
+        <Chronometer
+            android:id="@+id/record_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvVideo"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:layout_marginRight="10dp"
+            android:format="%s"
+            android:padding="@dimen/margin_5dp"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/ivPhoto"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:layout_above="@+id/record_pause"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/camera_start_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/record_control"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="@dimen/margin_5dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/video_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:checked="true"
+                android:gravity="center"
+                app:thumbTint="@color/white"
+                app:trackTint="@color/grey" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Video off/on"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/record_control"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:onClick="startRecord"
+            android:src="@drawable/camera_start_icon2" />
+
+        <ImageView
+            android:id="@+id/record_pause"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="stopRecord"
+            android:src="@drawable/camera_stop_icon"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tvVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/record_control"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:text="video"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="#80ffffff"
+        android:padding="10dp"
+        android:visibility="gone">
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/overlay_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/margin_5dp"
+        android:visibility="visible" />
+
+
+</RelativeLayout>

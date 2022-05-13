@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--  android:id="@+id/homeFragment"-->
+    <item
+        android:id="@+id/v3DashBoardFragment"
+        android:enabled="true"
+        android:icon="@drawable/v3_new_dash_board_icon"
+        android:menuCategory="secondary"
+        android:title="Dashboard" />
+    <item
+        android:id="@+id/v3TestFragment"
+        android:enabled="true"
+        android:icon="@drawable/v3_test_icon"
+        android:menuCategory="secondary"
+        android:title="Test" />
+    <item
+        android:id="@+id/v3TrainFragment"
+        android:enabled="true"
+        android:icon="@drawable/v3_train_icon"
+        android:menuCategory="secondary"
+        android:title="Train" />
+
+</menu>

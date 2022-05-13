@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.v_chek_host.vcheckhost">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.camera" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+   <!--  <uses-permission android:name="android.permission.RECORD_AUDIO" />
+     <uses-permission android:name="android.permission.FLASHLIGHT"/>-->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+   <!-- <queries>
+        <intent>
+            <action android:name="android.intent.action.PICK" />
+            <data android:mimeType="vnd.android.cursor.dir/image*" />
+        </intent>
+    </queries>-->
+    <application
+
+        android:allowBackup="true"
+        android:icon="@drawable/vchek_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/vchek_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".V2.PlayerActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".V3.PreviewModelImageActivity"></activity>
+        <activity
+            android:name=".V3.SplashScreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".V3.V3LoginActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".V3.V3FetchImagesListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".V3.V3PassAndFailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".V3.V3HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".V2.V2ModelTrainingDataSetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".V2.V2ModelVideoTrainingDataSetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".V2.V2DashboardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".V2.V3MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".V2.V2ModelActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".V2.VinInputActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".V2.V2LoginActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".V2.HostErrorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ParentDetailsDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DataCollectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PreviewImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DataCollectionCamaraActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ParentDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:label="Dashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".V2.CaptureActivity"
+            android:screenOrientation="landscape"
+            android:label="Train" />
+        <activity
+            android:name=".V2.CustomRecordActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".V2.PlayVideoActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".V2.VideoActivity"
+            android:screenOrientation="landscape" />
+
+        <service android:name=".services.VideoUploadService">
+            <intent-filter>
+                <action android:name="net.vChekHost.UploadService" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

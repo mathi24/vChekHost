@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#283593</color>-->
+    <color name="colorPrimary">#000000</color>
+    <!--  <color name="colorPrimary">#6200EE</color>-->
+   <!-- <color name="colorPrimaryDark">#263077</color>-->
+    <color name="colorPrimaryDark">#000000</color>
+    <!--  <color name="colorPrimaryDark">#3700B3</color>-->
+   <!-- <color name="colorAccent">#283593</color>-->
+    <color name="colorAccent">#000000</color>
+    <!--<color name="colorAccent">#A9A9A9</color>-->
+    <!--  <color name="colorAccent">#03DAC5</color>-->
+    <color name="colorBlue">#6200EE</color>
+    <color name="colorDarkBlue">#0008C7</color>
+    <color name="colorgray">#A9A9A9</color>
+    <color name="colorgrey_light">#F1EEEE</color>
+    <color name="colorgray_dark">#737272</color>
+    <color name="colorLiteGreen">#00BC99</color>
+    <color name="colorBlack">#343642</color>
+    <color name="new_primaryColor">#FFA93B</color>
+    <color name="new_primaryColorDark">#EC7004</color>
+    <color name="description">#1a1a1a</color>
+    <color name="teal">#59d3bc</color>
+   <!-- <color name="red">#FF5722</color>-->
+    <color name="red">#D50000</color>
+    <color name="alertpositivebuttoncolor">#FB0066</color>
+    <color name="alertnativebuttoncolor">#615858</color>
+    <color name="green">#8BC34A</color>
+    <color name="activity_title_color">#4D12121D</color>
+</resources>
